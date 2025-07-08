@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: FACT_TRANSACTIONS
+    description: 'SILVER FACT TRANSACTIONS'
+    columns:
+      - name: id
+        description: 'The primary key for this table'
+        data_tests:
+          - unique
+          - not_null
+
+  - name: DIM_DATE
+    description: 'DATE DIMENSION'
+    columns:
+      - name: id
+        description: 'The primary key for this table'
+        data_tests:
+          - unique
+          - not_null
+  - name: DIM_PERSON
+    description: 'PERSON DIMENSION'
+    columns:
+      - name: id
+        description: 'The primary key for this table'
+        data_tests:
+          - unique
+          - not_null
+
+  - name: DIM_PRODUCTS
+    description: 'PRODUCT DIMENSION'
+    columns:
+      - name: id
+        description: 'The primary key for this table'
+        data_tests:
+          - unique
+          - not_null

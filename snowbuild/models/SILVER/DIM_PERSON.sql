@@ -1,0 +1,8 @@
+{{ config(materialized='view') }}
+SELECT
+    PERSON_ID,
+    FIRST_NAME,
+    LAST_NAME,
+    EMAIL,
+    CREATED_AT
+FROM POSTGRES_BATCH.BRONZE.PERSON_ICEBERG
