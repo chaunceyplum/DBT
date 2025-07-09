@@ -4,7 +4,7 @@ models:
   - name: FACT_TRANSACTIONS
     description: 'SILVER FACT TRANSACTIONS'
     columns:
-      - name: id
+      - name: TRANSACTION_ID
         description: 'The primary key for this table'
         data_tests:
           - unique
@@ -13,15 +13,14 @@ models:
   - name: DIM_DATE
     description: 'DATE DIMENSION'
     columns:
-      - name: id
-        description: 'The primary key for this table'
+      - name: DATE_KEY
+        description: 'DATE FOR ALL ENTITIES'
         data_tests:
-          - unique
           - not_null
   - name: DIM_PERSON
     description: 'PERSON DIMENSION'
     columns:
-      - name: id
+      - name: PERSON_ID
         description: 'The primary key for this table'
         data_tests:
           - unique
@@ -30,7 +29,7 @@ models:
   - name: DIM_PRODUCTS
     description: 'PRODUCT DIMENSION'
     columns:
-      - name: id
+      - name: PRODUCT_ID
         description: 'The primary key for this table'
         data_tests:
           - unique
